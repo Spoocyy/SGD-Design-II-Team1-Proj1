@@ -8,7 +8,8 @@ using UnityEngine.InputSystem;
 public class BallThrower : MonoBehaviour
 {
     [SerializeField] Transform throwPoint;
-    [SerializeField] GameObject ballPrefab;
+    [SerializeField] GameObject skullPrefab;
+    private GameObject currentSkull;
 
     [SerializeField] float throwForce = 10f;
     [SerializeField] float arcHeight = 0.3f;
@@ -32,9 +33,9 @@ public class BallThrower : MonoBehaviour
 
     private void SpawnBall()
     {
-        ballPrefab = Instantiate(ballPrefab, throwPoint.position, throwPoint.rotation);
-        ballPrefab.transform.SetParent(throwPoint);
-        ballPrefab.GetComponent<Rigidbody>().isKinematic = true;
+        currentSkull = Instantiate(skullPrefab, throwPoint.position, throwPoint.rotation);
+        currentSkull.transform.SetParent(throwPoint);
+        currentSkull.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     private void ThrowBall()
@@ -45,10 +46,10 @@ public class BallThrower : MonoBehaviour
         throwDirection += Vector3.up * arcHeight;
         throwDirection.Normalize();
 
-        Rigidbody rb = ballPrefab.GetComponent<Rigidbody>();
-        FireSkull skull = ballPrefab.GetComponent<FireSkull>();
+        Rigidbody rb = currentSkull.GetComponent<Rigidbody>();
+        FireSkull skull = currentSkull.GetComponent<FireSkull>();
 
-        ballPrefab.transform.SetParent(null);
+        currentSkull.transform.SetParent(null);
         rb.isKinematic = false;
         skull.PrepareForThrow();
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);

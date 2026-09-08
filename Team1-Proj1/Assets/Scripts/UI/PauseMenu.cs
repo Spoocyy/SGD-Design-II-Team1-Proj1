@@ -48,10 +48,12 @@ public class PauseMenu : MonoBehaviour
         if (IsPaused)
         {
             CursorController.Unlock();
+            input.Player.Disable();
         }
         else
         {
             CursorController.Lock();
+            input.Player.Enable();
         }
     }
 }
