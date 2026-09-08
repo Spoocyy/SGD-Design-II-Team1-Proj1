@@ -17,15 +17,17 @@ public class BallThrower : MonoBehaviour
     [SerializeField] AudioClip swooshSFX;
 
     PlayerControls input;
+    Animator anim;
 
-    private void Start()
-    {
-        SpawnBall();
-    }
 
     private void Awake()
     {
         input = new PlayerControls();
+        anim = GetComponent<Animator>();
+    }
+    private void Start()
+    {
+        SpawnBall();
     }
 
     private void SpawnBall()
@@ -63,6 +65,7 @@ public class BallThrower : MonoBehaviour
 
     private void OnThrowPerformed(InputAction.CallbackContext context)
     {
+        anim.SetTrigger("Throw");
         ThrowBall();
     }
 
