@@ -6581,22 +6581,26 @@ PrefabInstance:
     - target: {fileID: -77049942280487449, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: 0dd34c0ded618484eb8437aaf464e663, type: 2}
+=======
+      objectReference: {fileID: 2100000, guid: a69d88c2b875b3647922b82398fc177b, type: 2}
+>>>>>>> Stashed changes
     - target: {fileID: 919132149155446097, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_Name
       value: Cutscene_Ani
       objectReference: {fileID: 0}
     - target: {fileID: 2327837304531730344, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -7.8889656
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327837304531730344, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.9262285
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327837304531730344, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 20.365032
+      value: 11.330565
       objectReference: {fileID: 0}
     - target: {fileID: 4081340537694328499, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6628,15 +6632,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4081340537694328499, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -39.21
+      value: 35.769745
       objectReference: {fileID: 0}
     - target: {fileID: 4081340537694328499, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.036
+      value: 8.8621
       objectReference: {fileID: 0}
     - target: {fileID: 4081340537694328499, guid: 11693ce614446e948a9efaeb67f9fda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 21.186
+      value: 20.189423
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32985,7 +32989,7 @@ Transform:
   m_GameObject: {fileID: 2129054699}
   serializedVersion: 2
   m_LocalRotation: {x: 0.051038615, y: 0.9196837, z: -0.12754112, w: 0.36784524}
-  m_LocalPosition: {x: 123.788, y: 142.778, z: 320.97385}
+  m_LocalPosition: {x: 120.837, y: 144.6, z: 320.854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
