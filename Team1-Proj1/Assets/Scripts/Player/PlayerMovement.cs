@@ -2,6 +2,7 @@
 //8/24/2026
 //SGD Design II - Project 1 - Team 1
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDirection;
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 5f;
+    [SerializeField] private float jumpDelay = 0.2f;
     [SerializeField] float sphereCastRadius = 0.4f;
     [SerializeField] float sphereCastDistance = 0.6f;
     [SerializeField] Vector3 sphereCastOriginOffset = Vector3.zero;
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool jumpRequested;
     private bool isGrounded;
+    private bool isJumping;
 
     private void Awake()
     {
@@ -48,12 +51,23 @@ public class PlayerMovement : MonoBehaviour
         CheckGrounded();
         anim.SetBool("isGrounded", isGrounded);
 
-        if(jumpRequested && isGrounded)
+        if(jumpRequested && isGrounded && !isJumping)
         {
-            ApplyJump();
+            isJumping = true;
             anim.SetTrigger("Jump");
+            StartCoroutine(JumpAfterDelay(jumpDelay));
         }
         jumpRequested = false;
+    }
+
+    IEnumerator JumpAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (isGrounded)
+        {
+            ApplyJump();
+        }
+        isJumping = false;
     }
 
     //Cast a sphere downward from the player to detect if they're touching the ground
@@ -70,6 +84,11 @@ public class PlayerMovement : MonoBehaviour
             sphereCastDistance,
             groundLayer
         );
+    }
+
+    private void OnJumpPerformed()
+    {
+        
     }
 
     private void ApplyJump()
