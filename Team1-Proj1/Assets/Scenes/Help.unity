@@ -625,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 14}
+  m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: 1400, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900461279
@@ -649,18 +649,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'You are a Jester that is Distress, Oppress, Lock outside to express. You''re
-    flame will be an key to fight back the darkness. Journey up high or low through
-    your linear scope. Don''t harm yourself to doubt your hopes. Above all else,
-    watch your step. You lurking will bring you to death. Watch your Environment
-    that won''t unravel.
+    flame will be an key to fight the darkness.  Even though its dark, you don''t
+    what your identity to be seen if anyone comes down looking for him. You almost
+    escaped the biggest crime of your life. Journey up high or low through a linear
+    scope and get out before you die "playing with fire".
 
 
     WASD - To Move
 
-    Spacebar - Jump
+    Spacebar
+    - Jump
 
-    Mouse Rotation
-    - Looking Around'
+    Mouse Rotation - Looking Around'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}
   m_sharedMaterial: {fileID: 2324290413442396627, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}
