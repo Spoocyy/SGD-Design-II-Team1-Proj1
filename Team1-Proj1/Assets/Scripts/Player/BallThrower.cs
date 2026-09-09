@@ -17,14 +17,11 @@ public class BallThrower : MonoBehaviour
     [SerializeField] Transform cameraTransform;
     private Vector3 throwDirection;
     [SerializeField] AudioClip swooshSFX;
-
-    PlayerControls input;
     Animator anim;
 
 
     private void Awake()
     {
-        input = new PlayerControls();
         anim = GetComponent<Animator>();
     }
     private void Start()
@@ -79,14 +76,14 @@ public class BallThrower : MonoBehaviour
 
     private void OnEnable()
     {
-        input.Player.Throw.performed += OnThrowPerformed;
-        input.Player.Enable();
+        PlayerMovement.input.Player.Throw.performed += OnThrowPerformed;
+        PlayerMovement.input.Player.Enable();
     }
 
     private void OnDisable()
     {
-        input.Player.Throw.performed -= OnThrowPerformed;
-        input.Player.Disable();
+        PlayerMovement.input.Player.Throw.performed -= OnThrowPerformed;
+        PlayerMovement.input.Player.Disable();
     }
 
 

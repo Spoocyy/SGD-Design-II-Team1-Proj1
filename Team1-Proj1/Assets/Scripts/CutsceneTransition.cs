@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class CutsceneTransition : MonoBehaviour
 {
     [SerializeField] float cutsceneDuration = 25f;
-    [SerializeField] string nextScene = "Level 1";
 
     private void Start()
     {
@@ -19,6 +18,23 @@ public class CutsceneTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(cutsceneDuration);
         yield return FadeTransition.instance.FadeOut();
+        
+        string currentScene = SceneManager.GetActiveScene().name;
+        string nextScene;
+
+        if (currentScene == "Cut Scene")
+        {
+            nextScene = "Level 1";
+        }
+        else if (currentScene == "EndCutscene")
+        {
+            nextScene = "MainMenu";
+        }
+        else
+        {
+            Debug.Log("No Next Scene");
+            yield break;
+        }
         
         AsyncOperation operation = SceneManager.LoadSceneAsync(nextScene);
         while (!operation.isDone)

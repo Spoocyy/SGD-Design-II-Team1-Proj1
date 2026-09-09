@@ -6,7 +6,7 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    PlayerControls input;
+    public static PlayerControls input { get; private set; }
     Rigidbody rb;
     Animator anim;
     Vector2 moveDirection;
@@ -24,8 +24,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        if (input == null)
+        {
+            input = new PlayerControls();
+        }
         rb = GetComponent<Rigidbody>();
-        input = new PlayerControls();
         anim = GetComponent<Animator>();
 
         //Input activations that relate to PlayerActions map

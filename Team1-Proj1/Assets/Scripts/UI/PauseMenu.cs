@@ -7,26 +7,24 @@ using UnityEngine.InputSystem;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenuUI;
-
-    private PlayerControls input;
+    
     public static bool IsPaused {  get; private set; }
 
     private void Awake()
     {
-        input = new PlayerControls();
         pauseMenuUI.SetActive(false);
     }
 
     private void OnEnable()
     {
-        input.UI.Escape.performed += TogglePause;
-        input.UI.Enable();
+        PlayerMovement.input.UI.Escape.performed += TogglePause;
+        PlayerMovement.input.UI.Enable();
     }
 
     private void OnDisable()
     {
-        input.UI.Escape.performed -= TogglePause;
-        input.UI.Disable();
+        PlayerMovement.input.UI.Escape.performed -= TogglePause;
+        PlayerMovement.input.UI.Disable();
     }
 
     public void Resume()
@@ -48,12 +46,12 @@ public class PauseMenu : MonoBehaviour
         if (IsPaused)
         {
             CursorController.Unlock();
-            input.Player.Disable();
+            PlayerMovement.input.Player.Disable();
         }
         else
         {
             CursorController.Lock();
-            input.Player.Enable();
+            PlayerMovement.input.Player.Enable();
         }
     }
 }

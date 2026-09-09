@@ -4713,7 +4713,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1106563633393636324, guid: dd44867efaa067342b86c6b475b23975, type: 3}
+  - {fileID: 2100000, guid: f0e882c0c45a4d2418f0290226218cec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5300,7 +5300,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 4, z: 5}
+  m_Size: {x: 3, y: 4, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &524903055
 Transform:
@@ -7233,7 +7233,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10692,7 +10692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
   respawnPoint1: {fileID: 415183197}
-  respawnDelay: 2
+  respawnDelay: 3.5
 --- !u!114 &1131431413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12149,7 +12149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec416268bd0feb4bb5a831772d446e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelAudioTrigger
-  levelAmbience: {fileID: 8300000, guid: 5c7fcb74280b03448822ade7ab8dfb98, type: 3}
+  levelAmbience: {fileID: 8300000, guid: 200c73436e0230644abf41fd84ecc2e3, type: 3}
 --- !u!4 &1261313566
 Transform:
   m_ObjectHideFlags: 0
@@ -17721,7 +17721,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1106563633393636324, guid: dd44867efaa067342b86c6b475b23975, type: 3}
+  - {fileID: 2100000, guid: f0e882c0c45a4d2418f0290226218cec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
