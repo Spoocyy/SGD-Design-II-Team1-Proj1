@@ -625,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 1400, y: 750}
+  m_AnchoredPosition: {x: 0, y: -5.1316}
+  m_SizeDelta: {x: 1400, y: 800.2632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900461279
 MonoBehaviour:
@@ -648,19 +648,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You are a Jester that is Distress, Oppress, Lock outside to express. You''re
-    flame will be an key to fight the darkness.  Even though its dark, you don''t
-    what your identity to be seen if anyone comes down looking for him. You almost
-    escaped the biggest crime of your life. Journey up high or low through a linear
-    scope and get out before you die "playing with fire".
+  m_text: 'You almost escaped the biggest crime of your life, but you''ve been thrown
+    into the dungeon underneath the castle. Your flame will be a key to fight the
+    darkness on your journey to escape.  Even though its dark, you want to be disguised
+    in case any guards might see you. Trek up high and low through a multitude of
+    rooms and escape before you die "playing with fire".
 
 
-    WASD - To Move
+    WASD - Movement
 
     Spacebar
     - Jump
 
-    Mouse Rotation - Looking Around'
+    Left Click - Throw
+
+    Mouse Rotation - Camera Movement'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}
   m_sharedMaterial: {fileID: 2324290413442396627, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}
