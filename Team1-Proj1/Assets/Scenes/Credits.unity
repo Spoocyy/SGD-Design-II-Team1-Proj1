@@ -309,27 +309,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tyler Prince - Programming (Tutorials - Menu Creation - Level 2 Build
-    - Bug Fixing)
+  m_text: 'Erik Lee Robertson: Programming (Player Movement & Interaction - Polished
+    Menus - Objects Interactions - Setup Animations & Cutscenes  - Pause Menu - Bug
+    Fixing - Player Health - UI - Music & Sound Effects - Level 2 Build - Level 3
+    Build)
 
 
-    Erik Lee Robertson - Programming (Player Movement & Interaction
-    - Polished Menus - Objects Interactions - Setup Animations & Cutscenes -  - Pause
-    Menu - Bug Fixing - Art & Audio Assets - Player Health - UI - Music & Sound Effects)
+    Maya Nossov: Artist (Build Level 1 - Animation [Mixamo/Created]
+    - Rigging - Texturing - Cinematics - Modeling - Level 3 - Tutorial - Story)
 
 
-    Maya
-    Nossov - Artist (Build Level 1 - Animation [Mixamo/Created] - Rigging - Texturing
-    - Cinematics - Modeling)
+    All
+    members: Environment Assets - Audio Assets
 
 
-    All members - Level 3 - Editing [Audio] - Audio
-    Assets
-
-
-    Borrowed Assets: Gece Studio - PolyOne - Space_Exploration_GUI_Kit
-    - WALLCOEUR - JustCreate - AquariusMax - Dieter Steffmann -  Manfred Klein -
-    Pixabay'
+    Borrowed Assets: Gece Studio
+    - PolyOne - Space_Exploration_GUI_Kit - WALLCOEUR - JustCreate - AquariusMax
+    - Dieter Steffmann -  Manfred Klein - Pixabay - Mixamo'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}
   m_sharedMaterial: {fileID: 2324290413442396627, guid: 900d634ed6ba06e4d8437350bfd9d8fa, type: 2}

@@ -13,6 +13,7 @@ public class BallThrower : MonoBehaviour
 
     [SerializeField] float throwForce = 10f;
     [SerializeField] float arcHeight = 0.3f;
+    [SerializeField] private float throwDelay = 0.8f;
     [SerializeField] Transform cameraTransform;
     private Vector3 throwDirection;
     [SerializeField] AudioClip swooshSFX;
@@ -67,6 +68,12 @@ public class BallThrower : MonoBehaviour
     private void OnThrowPerformed(InputAction.CallbackContext context)
     {
         anim.SetTrigger("Throw");
+        StartCoroutine(ThrowAfterDelay(throwDelay));
+    }
+
+    IEnumerator ThrowAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         ThrowBall();
     }
 
