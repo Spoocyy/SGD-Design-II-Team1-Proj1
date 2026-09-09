@@ -18,7 +18,12 @@ public class CutsceneTransition : MonoBehaviour
     IEnumerator WaitAndLoadScene()
     {
         yield return new WaitForSeconds(cutsceneDuration);
-
-        SceneManager.LoadScene(nextScene);
+        yield return FadeTransition.instance.FadeOut();
+        
+        AsyncOperation operation = SceneManager.LoadSceneAsync(nextScene);
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
     }
 }
