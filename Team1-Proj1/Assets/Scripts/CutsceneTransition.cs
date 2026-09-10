@@ -37,6 +37,8 @@ public class CutsceneTransition : MonoBehaviour
         }
         
         AsyncOperation operation = SceneManager.LoadSceneAsync(nextScene);
+        Time.timeScale = 1f;
+        CursorController.Unlock();
         while (!operation.isDone)
         {
             yield return null;
