@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour
     public void CreditsMenu()
     {
         SceneManager.LoadSceneAsync("Credits");
+        Time.timeScale = 1f;
     }
 
     public void BackMainMenu()
     {
         SceneManager.LoadSceneAsync("MainMenu");
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
@@ -32,5 +34,6 @@ public class MainMenu : MonoBehaviour
     public void HelpMenu()
     {
         SceneManager.LoadSceneAsync("Help");
+        Time.timeScale = 1f;
     }
 }
