@@ -3,6 +3,9 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     [SerializeField] Transform newRespawnPoint;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip drumClip;
+    [SerializeField] private Animator checkpointTextAnim;
 
     private bool triggered = false;
 
@@ -18,6 +21,9 @@ public class Checkpoint : MonoBehaviour
                 playerRespawn.SetRespawnPoint(newRespawnPoint);
                 Debug.Log("Checkpoint works");
                 triggered = true;
+                
+                audioSource.PlayOneShot(drumClip);
+                checkpointTextAnim.SetTrigger("ShowText");
             }
         }
     }
