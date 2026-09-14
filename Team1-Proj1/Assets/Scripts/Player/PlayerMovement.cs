@@ -89,11 +89,6 @@ public class PlayerMovement : MonoBehaviour
         );
     }
 
-    private void OnJumpPerformed()
-    {
-        
-    }
-
     private void ApplyJump()
     {
         //Reset vertical velocity first so jump height is consistent
