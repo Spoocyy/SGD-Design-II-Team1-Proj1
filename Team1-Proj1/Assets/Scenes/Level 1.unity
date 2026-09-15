@@ -6575,6 +6575,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   jumpDelay: 0.2
+  gravityMultiplier: 2
   sphereCastRadius: 0.4
   sphereCastDistance: 0.6
   sphereCastOriginOffset: {x: 0, y: 0.99, z: 0.15}
@@ -24349,8 +24350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
-  jumpForce: 7
+  jumpForce: 10
   jumpDelay: 0.1
+  gravityMultiplier: 2
   sphereCastRadius: 0.32
   sphereCastDistance: 1.2
   sphereCastOriginOffset: {x: 0, y: 1.5, z: 0}

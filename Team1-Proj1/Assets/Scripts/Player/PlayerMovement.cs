@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 5f;
     [SerializeField] private float jumpDelay = 0.2f;
+    [SerializeField] float gravityMultiplier = 2f;
     [SerializeField] float sphereCastRadius = 0.4f;
     [SerializeField] float sphereCastDistance = 0.6f;
     [SerializeField] Vector3 sphereCastOriginOffset = Vector3.zero;
@@ -61,6 +62,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(JumpAfterDelay(jumpDelay));
         }
         jumpRequested = false;
+
+        if (!isGrounded)
+        {
+            float gravityAdjustment = Physics.gravity.y * (gravityMultiplier - 1) * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector3.up * gravityAdjustment;
+        }
     }
 
     IEnumerator JumpAfterDelay(float delay)
