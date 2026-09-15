@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42f0b7dbdec23cb4dbf42c69b1ddccae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305098
+  packageName: VFX URP - Fire Package
+  packageVersion: 1.0
+  assetPath: Assets/VFXPACK_FIRE_WALLCOEUR/Prefab/VFX_TorchLight_Green.prefab
+  uploadId: 716663
