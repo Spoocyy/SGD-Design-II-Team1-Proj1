@@ -13221,7 +13221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef2c1a997411394e8b6108b47174f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneTransition
-  cutsceneDuration: 24
+  cutsceneDuration: 4.5
 --- !u!4 &852958011
 Transform:
   m_ObjectHideFlags: 0
@@ -16041,6 +16041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.339
       objectReference: {fileID: 0}
+    - target: {fileID: 415287891258781815, guid: 8a4b244dd871459479a0f664ec8087e1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f0e882c0c45a4d2418f0290226218cec, type: 2}
     - target: {fileID: 608321761475470972, guid: 8a4b244dd871459479a0f664ec8087e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 60.594
@@ -16153,6 +16157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.7840973
       objectReference: {fileID: 0}
+    - target: {fileID: 3099756089343826349, guid: 8a4b244dd871459479a0f664ec8087e1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f0e882c0c45a4d2418f0290226218cec, type: 2}
     - target: {fileID: 3183749884578473501, guid: 8a4b244dd871459479a0f664ec8087e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 23.972
@@ -30203,7 +30211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00033569336}
+  m_AnchoredPosition: {x: 0, y: -0.00036621094}
   m_SizeDelta: {x: 1, y: -0.42999268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1886022664
